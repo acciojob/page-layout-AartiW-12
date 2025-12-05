@@ -1,9 +1,14 @@
-export default function PageLayout({header, footer , child}){
+import React from "react";
+
+// PageLayout.jsx
+export default function PageLayout({ header, footer, children }) {
     return (
         <div>
             <header>{header}</header>
-            <div>{child}</div>
-            <footer>{child}</footer>
+
+            <main>{children}</main>
+
+            <footer>{footer}</footer>
         </div>
-    )
+    );
 }
